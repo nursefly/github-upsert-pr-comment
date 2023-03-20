@@ -20,7 +20,7 @@ install it as long as `npm` is installed.
 ```bash
 npx -y -p @vivianhealth/github-upsert-pr-comment@latest \
   github-upsert-pr-comment -- \
-    -a <github-auth-string> \
+    -t <github-personal-access-token> \
     -o <owner> \
     -r <repository> \
     -n <pr-number> \
@@ -45,7 +45,7 @@ And then to run the CLI tool inside your project directory:
 
 ```bash
 npx github-upsert-pr-comment -- \
-  -a <github-auth-string> \
+  -t <github-personal-access-token> \
   -o <owner> \
   -r <repository> \
   -n <pr-number> \
